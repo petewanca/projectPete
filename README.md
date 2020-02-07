@@ -2,9 +2,9 @@
 2020 project. At least one new feature added each month.
 
 
-### tentative plan 
+### tentative plans so far...
 
-## february: 
+## february
 1. session storage todo list react app
 2. add server + database connection
 3. {stretch goal} add user auth
