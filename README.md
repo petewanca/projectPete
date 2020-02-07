@@ -1,8 +1,5 @@
 # projectPete
-2020 project. At least one new feature added each month.
-
-
-### tentative plans so far...
+2020 project. At least one new feature added each month. Tentative plans so far...
 
 ## february
 1. session storage todo list react app
