@@ -13,10 +13,19 @@
 - {stretch goal} add user auth
 
 ### *March*
+- user profile management
 - comments on todos
 - view completed/deleted items
 - authorization levels (public/private/admin todo list views}
 - {stretch goal} some sort of calendar integration?
+
+### *April*
+- advanced tasks (ticketing style)
+    - priority level
+    - due date
+    - descriptions
+    - comments
+    - {stretch goal} relation to other tasks / todos
 
 ## license 
 - MIT
