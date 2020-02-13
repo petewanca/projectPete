@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 
 
 class Todoitem extends Component {
+
+    getStyle = () => {
+
+    }
+
     render() {
         return (
             <div>
