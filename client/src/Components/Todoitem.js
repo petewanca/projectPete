@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-
-
 class Todoitem extends Component {
 
     getStyle = () => {
@@ -12,7 +10,10 @@ class Todoitem extends Component {
             <div>
                 {
                     this.props.todos.map(item => (
-                        <p key={ item.id }>{ item.title }</p>
+                        <div style={{display: 'flex'}}>
+                            <input type='checkbox' key={ item.userId }/>
+                            <p key={ item.id }>{ item.title }</p>
+                        </div>
                     ))
                 }
             </div>
