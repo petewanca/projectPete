@@ -10,7 +10,7 @@ class Todos extends Component {
                 {
                     // for every item in todos, generate a todoitem component
                     this.props.todos.map(item => (
-                        <Todoitem todos={item}/>
+                        <Todoitem todos={item} handleChange={this.props.handleChange} />
                     ))
                 } 
             </>

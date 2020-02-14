@@ -7,7 +7,9 @@ class Todoitem extends Component {
             display: 'flex',
             overflow: 'auto',
             borderBottom: 'solid #ede5e4 1px',
-            margin: '2% 0'
+            margin: '2% 0',
+            textDecoration: this.props.todos.completed ?
+            'line-through' : 'none'
         }
     }
 
@@ -19,9 +21,9 @@ class Todoitem extends Component {
                 {
                     <div className='row' style={this.getStyle()}>
                         {/* check box for complete || incomplete */}
-                        <input type='checkbox' key={userId} style={checkButton}/>
+                        <input type='checkbox' key={userId} style={checkButton} onChange={this.props.handleChange.bind(this, id)} />
                         {/* title of todo */}
-                        <p key={id} style={{flexGrow: '2'}}>{title}</p>
+                        <p key={id} style={listText}>{title}</p>
                         {/* delete button */}
                         <button style={deleteButton}>X</button>
                     </div>
@@ -40,13 +42,18 @@ const deleteButton = {
     height: '25px',
     width: '25px',
     marginRight: '2%',
-    marginLeft: '2%'
+    marginLeft: '2%',
 }
 // check box styling
 const checkButton = {
     marginRight: '2%',
     marginLeft: '2%',
     verticalAlign: 'center'
+}
+
+// todo list text styling
+const listText = {
+    flexGrow: '2'
 }
 
 export default Todoitem

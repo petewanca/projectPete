@@ -12,6 +12,7 @@ class App extends Component {
     todos: []
   }
 
+  // when component loads, api call to get random list
   componentDidMount = () => {
     axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
     .then(res => {
@@ -19,10 +20,22 @@ class App extends Component {
     })
   }
 
+  // handle change at todoitem component level
+  handleChange = (id) => {
+    this.setState({
+      todos: this.state.todos.map(item => {
+        if (item.id === id) {
+          item.completed = !item.completed
+        }
+        return item
+      })
+    })
+  }
+
   render() {
     return (
       <div className='container'>
-        <Todos todos={ this.state.todos }/>
+        <Todos todos={ this.state.todos } handleChange={this.handleChange} />
       </div>
     )
   }
