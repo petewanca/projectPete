@@ -25,7 +25,7 @@ class Todoitem extends Component {
                         {/* title of todo */}
                         <p key={id} style={listText}>{title}</p>
                         {/* delete button */}
-                        <button style={deleteButton}>X</button>
+                        <button style={deleteButton} onClick={this.props.handleDelete.bind(this,id)}>X</button>
                     </div>
                 }
             </>

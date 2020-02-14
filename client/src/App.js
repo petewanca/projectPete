@@ -32,10 +32,20 @@ class App extends Component {
     })
   }
 
+  // handle delete at todoitem component level
+  handleDelete = (id) => {
+    this.setState({
+      todos: this.state.todos.filter(item => {
+        return item.id !== id
+      })
+    })
+  }
+
   render() {
     return (
       <div className='container'>
-        <Todos todos={ this.state.todos } handleChange={this.handleChange} />
+        {/* <input type='text' placeholder='Enter a todo' /> */}
+        <Todos todos={ this.state.todos } handleChange={this.handleChange} handleDelete={this.handleDelete} />
       </div>
     )
   }
