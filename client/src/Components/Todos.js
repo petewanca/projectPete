@@ -11,7 +11,7 @@ class Todos extends Component {
                 {
                     // for every item in todos, generate a todoitem component
                     this.props.todos.map(item => (
-                        <Todoitem todos={item} handleChange={this.props.handleChange} handleDelete={this.props.handleDelete}/>
+                        <Todoitem todos={item} todoItemCheckBox={this.props.todoItemCheckBox} todoItemDelete={this.props.todoItemDelete}/>
                     ))
                 } 
             </>

@@ -21,8 +21,8 @@ class App extends Component {
     })
   }
 
-  // handle change at todoitem component level
-  handleChange = (id) => {
+  // handle check box change at todoitem component level
+  todoItemCheckBox = (id) => {
     this.setState({
       todos: this.state.todos.map(item => {
         if (item.id === id) {
@@ -33,8 +33,8 @@ class App extends Component {
     })
   }
 
-  // handle delete at todoitem component level
-  handleDelete = (id) => {
+  // handle deletion of todoitem at todoitem component level
+  todoItemDelete = (id) => {
     this.setState({
       todos: this.state.todos.filter(item => {
         return item.id !== id
@@ -42,11 +42,12 @@ class App extends Component {
     })
   }
 
+
   render() {
     return (
       <div className='container'>
         <Inputbar />
-        <Todos todos={ this.state.todos } handleChange={this.handleChange} handleDelete={this.handleDelete} />
+        <Todos todos={ this.state.todos } todoItemCheckBox={this.todoItemCheckBox} todoItemDelete={this.todoItemDelete} />
       </div>
     )
   }
