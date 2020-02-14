@@ -4,7 +4,7 @@ import Todos from './Components/Todos'
 
 // packages
 import axios from 'axios'
-// import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 
 
 class App extends Component {
@@ -21,7 +21,9 @@ class App extends Component {
 
   render() {
     return (
-      <Todos todos={ this.state.todos }/>
+      <div className='container'>
+        <Todos todos={ this.state.todos }/>
+      </div>
     )
   }
 }

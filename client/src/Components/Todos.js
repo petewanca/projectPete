@@ -6,7 +6,14 @@ import Todoitem from './Todoitem'
 class Todos extends Component {
     render() {
         return (
-            <Todoitem todos={ this.props.todos }/>
+            <>
+                {
+                    // for every item in todos, generate a todoitem component
+                    this.props.todos.map(item => (
+                        <Todoitem todos={item}/>
+                    ))
+                } 
+            </>
         )
     }
 }
