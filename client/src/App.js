@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 // Components
 import Todos from './Components/Todos'
+import Inputbar from './Components/Inputbar'
 
 // packages
 import axios from 'axios'
@@ -44,7 +45,7 @@ class App extends Component {
   render() {
     return (
       <div className='container'>
-        {/* <input type='text' placeholder='Enter a todo' /> */}
+        <Inputbar />
         <Todos todos={ this.state.todos } handleChange={this.handleChange} handleDelete={this.handleDelete} />
       </div>
     )
