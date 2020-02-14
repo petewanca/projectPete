@@ -1,8 +1,9 @@
 # projectPete
 
-## tech
-- Javascript for logic
-- NPM packages (csvtojson & json2csv)
+## current tech
+- React
+- Axios
+- Bootstrap
 
 ## about
 - 2020 project. At least one new feature added each month. Tentative plans so far...
