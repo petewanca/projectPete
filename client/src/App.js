@@ -16,9 +16,8 @@ class App extends Component {
   // when component loads, api call to backend
   componentDidMount = () => {
     axios.get('/api/todos')
-    .then(res => {
-      this.setState({todos: res.data})
-    }).catch (err => console.log(err));
+    .then(res => this.setState({todos: res.data}))
+    .catch (err => console.log(err));
   }
 
   // handle check box change at todoitem component level
