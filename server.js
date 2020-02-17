@@ -11,6 +11,7 @@ const port = 5000;
 // // Don't drop db by default
 // var syncOptions = { force: false };
 
+// add models and configure jaws db, then move to input component
 
 // send todo list to front end on route hit
 app.use('/api/todos', (req, res) => {
