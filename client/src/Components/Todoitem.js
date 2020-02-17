@@ -15,14 +15,14 @@ class Todoitem extends Component {
     }
 
     render() {
-        const {userId, id, title} = this.props.todos;
+        const {id, title} = this.props.todos;
         return (
 
             <>
                 {
                     <div className='row' style={this.getStyle()}>
                         {/* check box for complete || incomplete */}
-                        <input type='checkbox' key={userId} style={checkButton} onChange={this.props.todoItemCheckBox.bind(this, id)} />
+                        <input type='checkbox' key={id*.025} style={checkButton} onChange={this.props.todoItemCheckBox.bind(this, id)} />
                         {/* title of todo */}
                         <p key={id} style={listText}>{title}</p>
                         {/* delete button */}

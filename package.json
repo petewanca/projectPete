@@ -1,0 +1,25 @@
+{
+  "name": "projectPete",
+  "version": "1.0.0",
+  "description": "- React\r - Axios\r - Bootstrap",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petewanca/projectPete.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petewanca/projectPete/issues"
+  },
+  "homepage": "https://github.com/petewanca/projectPete#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
