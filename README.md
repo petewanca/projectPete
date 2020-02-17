@@ -2,8 +2,12 @@
 
 ## current tech
 - React
+- Node
+- Express
 - Axios
 - Bootstrap
+- Sequelize
+- MySQL
 
 ## about
 - 2020 project. At least one new feature added each month. Tentative plans so far...

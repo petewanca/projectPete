@@ -6,7 +6,6 @@ const app = express();
 const port = 5000;
 
 
-
 // // Define Models
 // var db = require("./models");
 // // Don't drop db by default
