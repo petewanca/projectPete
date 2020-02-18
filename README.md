@@ -13,13 +13,14 @@
 - 2020 project. At least one new feature added each month. Tentative plans so far...
 
 ### *February*
-- session storage todo list react app
-- add server + database connection
+- state todo list react app --`completed`
+- add server --`completed`
+- database connection --`in progress`
 - {stretch goal} add user auth
 
-current actions...
-- add models and configure jaws db
-- input component completion (need to add on click to button for submitting state value up to parent array)
+In progress Notes...
+- add models and configure jaws db to local db gui
+- move input to separate child state component if auth completed early
 
 
 ### *March*

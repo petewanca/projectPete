@@ -22,11 +22,25 @@ class Todoitem extends Component {
                 {
                     <div className='row' style={this.getStyle()}>
                         {/* check box for complete || incomplete */}
-                        <input type='checkbox' key={id*.025} style={checkButton} onChange={this.props.todoItemCheckBox.bind(this, id)} />
+                        <input
+                            type='checkbox'
+                            key={id*.025}
+                            style={checkButton}
+                            onChange={this.props.todoItemCheckBox.bind(this, id)} 
+                        />
                         {/* title of todo */}
-                        <p key={id} style={listText}>{title}</p>
+                        <p
+                            key={id}
+                            style={listText}>
+                                {title}
+                        </p>
                         {/* delete button */}
-                        <button style={deleteButton} onClick={this.props.todoItemDelete.bind(this,id)}>X</button>
+                        <button
+                            style={deleteButton}
+                            onClick={this.props.todoItemDelete.bind(this,id)}
+                        >
+                            X
+                        </button>
                     </div>
                 }
             </>
