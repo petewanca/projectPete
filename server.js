@@ -1,24 +1,18 @@
-// dependencies
 const express = require('express');
-const app = express();
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-
-// support parsing of application/json type post data
-// support parsing of application/x-www-form-urlencoded post data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
-// declare port #
+const app = express();
 const port = process.env.PORT || 5000;
 
 
-// // Define Models
-// var db = require("./models");
-// // Don't drop db by default
-// var syncOptions = { force: false };
+// Define Models
+// Don't drop db by default
+// const db = require("./models");
+// const syncOptions = { force: false };
 
 
 // send todo list to front end on route hit
