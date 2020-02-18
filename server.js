@@ -1,6 +1,7 @@
 // dependencies
 const express = require('express');
 const app = express();
+require('dotenv').config();
 
 // declare port #
 const port = 5000;
