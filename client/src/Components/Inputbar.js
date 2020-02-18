@@ -23,7 +23,6 @@ class Inputbar extends Component {
                 <input style={inputBar} type='text' placeholder='Enter a todo...' value={this.state.userInput} onChange={this.addText}/>
                 {/* submit button for sending item to parent state todo array  */}
                 <Button style={addButton}>Add Todo</Button>
-                {/* need to add on click to button for submitting state value up to parent array */}
             </div>
         )
     }

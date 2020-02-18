@@ -17,6 +17,11 @@
 - add server + database connection
 - {stretch goal} add user auth
 
+current actions...
+- add models and configure jaws db
+- input component completion (need to add on click to button for submitting state value up to parent array)
+
+
 ### *March*
 - user profile management
 - comments on todos
