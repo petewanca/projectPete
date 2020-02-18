@@ -1,18 +1,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 require('dotenv').config();
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 const app = express();
 const port = process.env.PORT || 5000;
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Define Models
 // Don't drop db by default
-// const db = require("./models");
-// const syncOptions = { force: false };
+const db = require("./models");
+const syncOptions = { force: false };
 
 
 // send todo list to front end on route hit
@@ -66,6 +66,6 @@ app.use('/api/todos', (req, res) => {
 
 
 // set db to sync and then spin up server
-// db.sequelize.sync(syncOptions).then(() => {
+db.sequelize.sync(syncOptions).then(() => {
 app.listen(port, () => console.log(`server up on http://localhost:${port}`));
-// });
+});
