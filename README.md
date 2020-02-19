@@ -15,11 +15,10 @@
 ### *February*
 - state todo list react app --`completed`
 - add server --`completed`
-- database connection --`in progress`
-- {stretch goal} add user auth
+- database connection --`completed`
+- {stretch goal} add user auth --`in progress`
 
-In progress Notes...
-- add models and configure jaws db to local db gui
+Notes...
 - move input to separate child state component if auth completed early
 
 
