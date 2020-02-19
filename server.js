@@ -67,5 +67,5 @@ app.use('/api/todos', (req, res) => {
 
 // set db to sync and then spin up server
 db.sequelize.sync(syncOptions).then(() => {
-app.listen(port, () => console.log(`server up on http://localhost:${port}`));
+    app.listen(port, () => console.log(`server up on http://localhost:${port}`));
 });
