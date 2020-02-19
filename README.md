@@ -18,7 +18,9 @@
 - database connection --`completed`
 - {stretch goal} add user auth --`in progress`
 
-Notes...
+Notes after authentication...
+- convert client-side functions to hitting api routes
+- move todos from local var to database storage
 - move input to separate child state component if auth completed early
 
 
