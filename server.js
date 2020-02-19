@@ -14,6 +14,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const db = require("./models");
 const syncOptions = { force: false };
 
+// routes
+app.use('/', require('./routes/index'));
+app.use('/users', require('./routes/user'));
 
 // send todo list to front end on route hit
 app.use('/api/todos', (req, res) => {
@@ -67,5 +70,5 @@ app.use('/api/todos', (req, res) => {
 
 // set db to sync and then spin up server
 db.sequelize.sync(syncOptions).then(() => {
-app.listen(port, () => console.log(`server up on http://localhost:${port}`));
+    app.listen(port, () => console.log(`server up on http://localhost:${port}`));
 });
