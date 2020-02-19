@@ -17,7 +17,7 @@ class App extends Component {
 
   // when component loads, api call to backend
   componentDidMount = () => {
-    axios.get('/api/todos')
+    axios.get('/api/getTodos')
     .then(res => this.setState({todos: res.data}))
     .catch (err => console.log(err));
   }
