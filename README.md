@@ -11,17 +11,18 @@
 
 ## about
 - 2020 project. At least one new feature added each month. Tentative plans so far...
+- 3/9/2020 update: user auth being fulfilled in separate repo: https://github.com/petewanca/authpractice
+- plug and play to this app once redux practice complete here: https://github.com/petewanca/reduxpractice
 
 ### *February*
 - state todo list react app --`completed`
 - add server --`completed`
 - database connection --`completed`
-- {stretch goal} add user auth --`in progress`
+- {stretch goal} add user auth --`completed`
 
-Notes after authentication...
-- convert client-side functions to hitting api routes
-- move todos from local var to database storage
-- move input to separate child state component if auth completed early
+Notes after adding authentication...
+- move convert from sql to mongo for development phase
+- build out input in separate component
 
 
 ### *March*
