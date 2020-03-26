@@ -12,7 +12,7 @@
 ## about
 - 2020 project. At least one new feature added each month. Tentative plans so far...
 - 3/9/2020 update: user auth being fulfilled in separate repo: https://github.com/petewanca/authpractice
-- plug and play to this app once redux practice complete here: https://github.com/petewanca/reduxpractice
+- 3/26/2020 update: user auth completed here: https://github.com/petewanca/jwt-auth-implementation ... will add to this project in early april
 
 ### *February*
 - state todo list react app --`completed`
